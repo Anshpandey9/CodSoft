@@ -7,7 +7,8 @@ public class numberguessing {
         int totalround = 3;
         int score = 0;
         System.out.println(" Let's begin the number guessing game");
-        for(int round=1; round<totalround; round++) {
+        for(int round=1; round<=totalround; round++) {
+            System.out.println("Round "+ round + " begin");
             int RandomNum = rd.nextInt(100) + 1;
             int totalattempt = 5;
             boolean guesscorrectly = false;
@@ -33,7 +34,7 @@ public class numberguessing {
             if (!guesscorrectly) {
                 System.out.println("You use all your attempts. The correct num was " + RandomNum);
             }
-            System.out.println("\nGame over! your total score" + score);
+            System.out.println("\nGame over! your total score " + score);
         }
     }
 }
